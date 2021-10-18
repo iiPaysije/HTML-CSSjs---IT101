@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+</head>
+<body style="background-image: url('desk.jpeg');">
+
+  <script src="forma.js"></script>
+    
+    <!--Header start-->
+<div class="topnav" id="myTopnav" style="display: flex; justify-content: flex-end">
+    <a class="logo" href="index.html"><img src="computer.png" width="30%"></a>
+    <ul class="navbar">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="O%20kompaniji.html">O kompaniji</a></li>
+        <li><a href="proizvodi.html">Proizvodi</a></li>
+        <li><a href="O%20nama.html">O nama</a></li>
+        <li><a href="karijera.html">Karijera</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+</div>
+    <!--Header end-->
+
+<div class="forma"> 
+    <form name="forma" action="form-handler.html" method="post" onsubmit="return checkForm(this);" >
+
+        <p style="font-family: sans-serif"><fontsize="6"><b>Posaljite nam Vas CV</font></b> </p>
+        
+        <p>Ime:</p>  <input type="text" name="firstName" maxlength="15" size="15" > <br/><br/>
+        <p>Prezime:</p>  <input type="text" name="lastName" maxlength="15" size="15"> <br/><br/>
+        <p>E-mail adresa</p>  <input type="text" name="emailAddress" maxlength="40" size="45" > <br/><br/>  
+
+        <input type="file" name="Resume" >   
+        <button type="submit" value="Submit"> Submit </button>    
+
+    </form>
+</div>
+    
+    
+<!--footer -->
+<div class="footer">
+    <p> <small>Pavle Ljubenovic IT 101 Projekat 01/2019 </small> | </p>
+    <p id="leviT"><em>Nasa mala zamisljena firma </em></p>
+    
+</div>
+    
+</body>
+</html>

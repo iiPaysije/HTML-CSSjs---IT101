@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body style="background-image: url('desk.jpeg');">
+ <script src="forma.js"></script>    
+    <!--Header start-->
+<div class="topnav" id="myTopnav" style="display: flex; justify-content: flex-end">
+    <a class="logo" href="index.html"><img src="computer.png" width="30%"></a>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="O%20kompaniji.html">O kompaniji</a></li>
+        <li><a href="proizvodi.html">Proizvodi</a></li>
+        <li><a href="O%20nama.html">O nama</a></li>
+        <li><a href="karijera.html">Karijera</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+</div>
+    <!--Header end-->
+
+    
+    <!--Form start-->                               
+    <div class="container">  
+  
+    <h3>PITAJTE NAS </h3>
+    <h4>Za broj telefona unesite samo brojeve, za ime samo slova</h4>
+   
+    <form name="messageForm" onsubmit="return checkMessageForm(this)">
+    <label for="ime"><b>Ime</b></label>
+    <input type="text" placeholder="Pera" name="ime" id="imeKorisnika" required pattern="[A-Za-z]{3,15}">
+
+    <label for="prezime"><b>Prezime</b></label>
+    <input type="text" placeholder="Perić" name="prezime" id="prezimeKorisnika" required pattern="[A-Za-z]{3,15}">
+
+    <label for="email"><b>E-mail</b></label>
+    <input type="email" placeholder="peraperic@nesto.com" name="email" id="emailKorisnika" required>
+
+    <label for="brtel"><b>Broj telefona</b></label>
+    <input type="text" placeholder="+XXX XXX XXXX " name="brtel" id="telKorisnika" required pattern="+[0-9]{3} [0-9]{3,4} [0-9]{4}">
+
+    <label for="naslov"><b>Naslov poruke</b></label>
+        <input type="text" placeholder="Naslov" name="naslov" required> <br>
+
+    <label for="poruka"><b>Tekst poruke</b></label>
+    <textarea placeholder="Unesite vašu poruku" rows="5" name="poruka" id="porukaKorisnika" minlength="20" maxlength="1000" style="width: 100%;"></textarea>
+
+    <label for="tporuke"><b>Izaberi tip poruke</b></label>
+    <select name="tporuke" style="width: 100%;">
+      <option value="Pitanje">Pitanje</option>
+      <option value="Zahtev">Zahtev</option>
+      <option value="Predlog">Predlog</option>
+      <option value="Saradnja">Saradnja</option>
+    </select>
+    
+    <button type="submit" >Pošaljite poruku</button>
+        </form>
+
+</div>
+    <p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23008.125080893453!2d21.403689949999997!3d43.87622765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4756be5ddfb16669%3A0x255fe39b81b3cdd6!2z0JLQvtGY0L3QviDRgdC60LvQsNC00LjRiNGC0LUg4oCe0JrQsNGA0LDRktC-0YDRktC10LLQviDQsdGA0LTQvuKAnCwg0J_QsNGA0LDRm9C40L0!5e0!3m2!1ssr!2srs!4v1545949169207" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe> </p>
+    
+    
+    
+<!--footer -->
+<div class="footer">
+    <p> <small>Pavle Ljubenovic IT 101 Projekat 01/2019 </small> | </p>
+    <p id="leviT"><em>Nasa mala zamisljena firma </em></p>
+    
+</div>
+    
+</body>
+</html>
